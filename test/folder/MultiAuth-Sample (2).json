@@ -30,7 +30,7 @@
       ],
       "OptionType": "Group",
       "Name": "BasicAuthAndApiKeyAndApiHeader",
-      "Description": "My dnew test"
+      "Description": "My dsnew test"
     }
   ],
   "Name": "MultiAuth-Sample",
