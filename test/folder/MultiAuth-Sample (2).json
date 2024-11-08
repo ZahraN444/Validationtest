@@ -30,7 +30,7 @@
       ],
       "OptionType": "Group",
       "Name": "BasicAuthAndApiKeyAndApiHeader",
-      "Description": "My hello test"
+      "Description": "My hello testing"
     }
   ],
   "Name": "MultiAuth-Sample",
