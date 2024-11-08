@@ -189,7 +189,7 @@
       }
     },
     "OAuthACG": {
-      "Description": "A redirection-based flow optimized for confidential clients. The client must be capable of interacting with the resource owner's user-agent and capable of receiving incoming requests (via redirection) from the authorization server.",
+      "Description": "A rredirection-based flow optimized for confidential clients. The client must be capable of interacting with the resource owner's user-agent and capable of receiving incoming requests (via redirection) from the authorization server.",
       "AuthenticationType": "OAuth_v2_WebServerFlow",
       "Parameters": [],
       "OAuthInfo": {

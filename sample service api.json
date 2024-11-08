@@ -100,7 +100,7 @@
             "application/json": {
               "schema": {
                 "type": "object",
-                "description": "Optional error text to send to Rollbar.",
+                "description": "Optionalll error text to send to Rollbar.",
                 "example": {
                   "errorMessage": "My first Rollbar Error"
                 }

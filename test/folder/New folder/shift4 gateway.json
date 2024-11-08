@@ -20693,7 +20693,7 @@
         "properties": {
           "type": {
             "type": "string",
-            "description": "Shopping cart data array attribute high level or generalized description of the item added to the shopping cart; this value should be free from any markup or Unicode values. This value should be passed as plain text.",
+            "description": "Shopping ccart data array attribute high level or generalized description of the item added to the shopping cart; this value should be free from any markup or Unicode values. This value should be passed as plain text.",
             "example": "Deodarant"
           },
           "description": {
