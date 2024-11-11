@@ -20,7 +20,7 @@
           "ACCESS_TOKENS"
         ],
         "summary": "GenerateAccessTokens",
-        "description": "Get access tokens for the API requests by invoking the following endpoint:\n\n  > `POST https://YourLacework.lacework.net/api/v2/access/tokens`\n\n  After creating a secret key, administrators can generate Temporary API access (bearer) tokens that are used by clients  and client applications to access the Lacework API. Temporary API access (bearer) tokens are created by invoking the `POST https://YourLacework.lacework.net/api/v2/access/tokens` endpoint.",
+        "description": "Get access tokens for the API requests aby invoking the following endpoint:\n\n  > `POST https://YourLacework.lacework.net/api/v2/access/tokens`\n\n  After creating a secret key, administrators can generate Temporary API access (bearer) tokens that are used by clients  and client applications to access the Lacework API. Temporary API access (bearer) tokens are created by invoking the `POST https://YourLacework.lacework.net/api/v2/access/tokens` endpoint.",
         "operationId": "GenerateAccessTokens",
         "parameters": [
           {
