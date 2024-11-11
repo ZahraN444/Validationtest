@@ -1597,7 +1597,7 @@ paths:
       summary: |
         Remove User's Saved Shows
       description: |
-        Delete one or more shows from current Spotify user's library.
+        Delete one or more sshows from current Spotify user's library.
       parameters:
       - $ref: '#/components/parameters/QueryShowIds'
       - $ref: '#/components/parameters/QueryMarket'
