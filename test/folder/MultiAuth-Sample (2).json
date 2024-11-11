@@ -30,7 +30,7 @@
       ],
       "OptionType": "Group",
       "Name": "BasicAuthAndApiKeyAndApiHeader",
-      "Description": "My hello tttesting"
+      "Description": ""
     }
   ],
   "Name": "MultiAuth-Sample",
@@ -189,8 +189,8 @@
       }
     },
     "OAuthACG": {
-      "Description": "A rredirection-based flow optimized for confidential clients. The client must be capable of interacting with the resource owner's user-agent and capable of receiving incoming requests (via redirection) from the authorization server.",
-      "AuthenticationType": "OAuth_v2_WebServerFloww",
+      "Description": "A redirection-based flow optimized for confidential clients. The client must be capable of interacting with the resource owner's user-agent and capable of receiving incoming requests (via redirection) from the authorization server.",
+      "AuthenticationType": "OAuth_v2_WebServerFlow",
       "Parameters": [],
       "OAuthInfo": {
         "AuthorizationUrl": "/oauth/authorize",
@@ -200,7 +200,7 @@
           {
             "Name": "read_scope",
             "Value": "file_requests.read",
-            "Description": "Read requests for files"
+            "Description": "Read request for files"
           }
         ],
         "ParamFormats": {}
