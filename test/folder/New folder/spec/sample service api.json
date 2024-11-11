@@ -9,7 +9,7 @@
   "servers": [
     {
       "url": "https://sample-service.backstage-demo.roadie.io",
-      "description": "A plucblic instance which anyone can hit to generate sample data.",
+      "description": "A pluccblic instance which anyone can hit to generate sample data.",
       "variables": {}
     }
   ],
