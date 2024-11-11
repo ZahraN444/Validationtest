@@ -1,15 +1,15 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "The Sample Service API",
-    "description": "Send xerrors to Rollbar or Sentry",
+    "title": "The Samspxle Serviced API",
+    "description": "Send errors to Rollbar or Sentry",
     "contact": {},
     "version": "0.0.1"
   },
   "servers": [
     {
       "url": "https://sample-service.backstage-demo.roadie.io",
-      "description": "A plublic instance which anyone can hit to generate sample data.",
+      "description": "A plucblic instance which anyone can hit to generate sample data.",
       "variables": {}
     }
   ],
@@ -100,7 +100,7 @@
             "application/json": {
               "schema": {
                 "type": "object",
-                "description": "Optionalll error text to send to Rollbar.",
+                "description": "Optional error text to send to Rollbar.",
                 "example": {
                   "errorMessage": "My first Rollbar Error"
                 }
