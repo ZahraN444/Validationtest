@@ -1,5 +1,5 @@
 {
     "OpenAPIDirectoryPaths": [
-        "test/folder","test/folder/New folder","/test/folder/New folder/spectt"
+        "/test/folder/New folder/spectt"
     ]
 }
