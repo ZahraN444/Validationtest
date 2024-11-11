@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "The Samspxless Serviced API",
+    "title": "The Sample Service API",
     "description": "Send errors to Rollbar or Sentry",
     "contact": {},
     "version": "0.0.1"
@@ -9,7 +9,7 @@
   "servers": [
     {
       "url": "https://sample-service.backstage-demo.roadie.io",
-      "description": "A pluccblic instance which anyone can hit to generate sample data.",
+      "description": "A plublic instance which anyone can hit to generate sample data.",
       "variables": {}
     }
   ],
