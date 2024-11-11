@@ -1,7 +1,7 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "The Sampxle Service API",
+    "title": "The Sampxle Serviced API",
     "description": "Send errors to Rollbar or Sentry",
     "contact": {},
     "version": "0.0.1"
