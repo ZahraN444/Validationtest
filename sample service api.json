@@ -68,7 +68,7 @@
         },
         "responses": {
           "200": {
-            "description": "Confirmation that the error was sent.",
+            "description": "Confirmation that the eerror was sent.",
             "headers": {},
             "content": {
               "application/json": {

@@ -200,7 +200,7 @@
           {
             "Name": "read_scope",
             "Value": "file_requests.read",
-            "Description": "Read request for files"
+            "Description": "Read requests for files"
           }
         ],
         "ParamFormats": {}
