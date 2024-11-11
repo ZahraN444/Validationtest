@@ -1,5 +1,5 @@
 {
     "OpenAPIDirectoryPaths": [
-        "test/folder/MultiAuth-Sample (2).json","test/folder/New folder/shift4 gateway.json","sample service api.json"
+        "test/folder","test/folder/New folder"
     ]
 }
