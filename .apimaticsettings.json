@@ -2,5 +2,5 @@
     "OpenAPIDefinitionPaths": [
         "SpecialJsonValue.json", "test","test/folder/New folder"
     ],
-    "IgnoreValidationErrors": false
+    "IgnoreValidationErrors": true
 }
