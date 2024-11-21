@@ -1,0 +1,1416 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "JsonValueTester",
+    "description": "Testing Special JsonValue feature",
+    "contact": {},
+    "version": "1.1",
+    "x-codegen-settings": {
+      "Nullify404": true,
+      "GenerateAsyncCode": true,
+      "UseMethodPrefix": false,
+      "UseModelPostfix": false,
+      "UseControllerPrefix": true,
+      "UseEnumPostfix": false,
+      "CollectParameters": false,
+      "UseConstructorsForConfig": false,
+      "UseCommonSDKLibrary": false,
+      "iOSUseAppInfoPlist": false,
+      "AndroidUseAppManifest": false,
+      "BodySerialization": 0,
+      "BrandLabel": "Stamplay",
+      "UserAgent": "",
+      "EnableAdditionalModelProperties": true,
+      "PreserveParameterOrder": false,
+      "AppendContentHeaders": true,
+      "iOSGenerateCoreData": false,
+      "GenerateInterfaces": true,
+      "NodeHttpClient": "NODE_REQUEST",
+      "ValidateRequiredParameters": true,
+      "JavaUsePropertiesConfig": false,
+      "Timeout": 0.0,
+      "StoreTimezoneInformation": false,
+      "EnablePHPComposerVersionString": false,
+      "EnableLogging": false,
+      "ArraySerialization": "Indexed",
+      "ModelSerializationScheme": "Json",
+      "UseExceptionPrefix": true,
+      "RunscopeEnabled": false,
+      "AndroidHttpClient": "UNIREST",
+      "ObjCHttpClient": "UNIREST",
+      "CSharpHttpClient": "UNIREST",
+      "PHPHttpClient": "UNIREST",
+      "JavaHttpClient": "JAVA_OK",
+      "ParameterArrayFormat": "ParamArrayWithIndex",
+      "SecurityProtocols": [
+        "Ssl3",
+        "Tls"
+      ],
+      "GenerateTravisConfig": false,
+      "GenerateCircleConfig": false,
+      "GenerateAppveyorConfig": false,
+      "GenerateJenkinsConfig": false,
+      "EnableHttpCache": false,
+      "Retries": 3,
+      "RetryInterval": 1.0,
+      "GenerateAdvancedDocs": false,
+      "UnderscoreNumbers": true,
+      "UseSingletonPattern": true,
+      "DisableLinting": false,
+      "ApplyCustomizations": [],
+      "SortResources": false,
+      "AllowSkippingSSLCertVerification": false,
+      "DoNotSplitWords": [],
+      "EnableGlobalUserAgent": false,
+      "ReturnCompleteHttpResponse": false,
+      "GenerateModels": true,
+      "GenerateExceptions": true,
+      "IgnoreIfNullJson": false,
+      "DisableDocs": false,
+      "LiftParameterDescriptionFromCustomType": false,
+      "ThrowForHttpErrorStatusCodes": true,
+      "ResponseMapping": {
+        "Type": "Simple"
+      },
+      "ForceKeywordArgsInRuby": false,
+      "SymbolizeHashKeysInRuby": false,
+      "UsageExampleEndpoint": {
+        "Description": "",
+        "EndpointGroupName": "",
+        "EndpointName": ""
+      },
+      "IsLatestVersion": false,
+      "EnableImmutableModels": false,
+      "GenerateEnums": true,
+      "BackoffFactor": 2.0,
+      "StatusCodesToRetry": [
+        408,
+        413,
+        429,
+        500,
+        502,
+        503,
+        504,
+        521,
+        522,
+        524
+      ],
+      "RequestMethodsToRetry": [
+        "GET",
+        "PUT"
+      ],
+      "UserConfigurableRetries": true,
+      "UseEndpointMethodName": false,
+      "EncodeTemplateParameters": true,
+      "GenerateExamplesForOptionalFields": false,
+      "MultitargetDotnetVersions": false,
+      "BackoffMax": 120.0,
+      "RetryOnTimeout": true,
+      "EnableCookies": false,
+      "EnableJsonPassThroughForAny": true
+    },
+    "x-server-configuration": {
+      "default-environment": "testing",
+      "default-server": "default",
+      "environments": [
+        {
+          "name": "production",
+          "servers": [
+            {
+              "name": "default",
+              "url": "http://apimatic.hopto.org"
+            },
+            {
+              "name": "auth server",
+              "url": "http://apimaticauth.hopto.org:3000"
+            }
+          ]
+        },
+        {
+          "name": "testing",
+          "servers": [
+            {
+              "name": "default",
+              "url": "http://localhost:3000"
+            },
+            {
+              "name": "auth server",
+              "url": "http://apimaticauth.xhopto.org:3000"
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    "x-image-uri": ""
+  },
+  "servers": [
+    {
+      "url": "http://apimatic.hopto.org",
+      "variables": {}
+    },
+    {
+      "url": "http://apimaticauth.hopto.org:3000",
+      "variables": {}
+    },
+    {
+      "url": "http://localhost:3000",
+      "variables": {}
+    },
+    {
+      "url": "http://apimaticauth.xhopto.org:3000",
+      "variables": {}
+    }
+  ],
+  "paths": {
+    "/body/sendSchemaInModel": {
+      "post": {
+        "tags": [
+          "JsonObj"
+        ],
+        "summary": "SendSchemainModel",
+        "description": "Send Schema in Model",
+        "operationId": "SendSchemainModel",
+        "parameters": [],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SchemaContainer-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-SchemaContainer-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ServerResponse"
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/body/sendSchemaInModel",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "body": "{\"name\":\"a name\",\"id\":\"definition-123\",\"schemaMap\":{\"key1\":{\"$id\":\"https://example.com/person.schema.json\",\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"title\":\"Person\",\"type\":\"object\",\"properties\":{\"firstName\":{\"type\":\"string\",\"description\":\"The person's first name.\"},\"lastName\":{\"type\":\"string\",\"description\":\"The person's last name.\",\"test\":null},\"age\":{\"type\":\"integer\",\"description\":\"Age in years\",\"minimum\":0}}},\"key2\":{\"$id\":\"https://example.com/person.schema.json\",\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"title\":\"Person\",\"type\":\"object\",\"properties\":{\"firstName\":{\"type\":\"string\",\"description\":\"The person's first name.\"},\"lastName\":{\"type\":\"string\",\"description\":\"The person's last name.\",\"test\":null},\"age\":{\"type\":\"integer\",\"description\":\"Age in years\",\"minimum\":0}}}},\"schemaArray\":[{\"$id\":\"https://example.com/person.schema.json\",\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"title\":\"Person\",\"type\":\"object\",\"properties\":{\"firstName\":{\"type\":\"string\",\"description\":\"The person's first name.\"},\"lastName\":{\"type\":\"string\",\"description\":\"The person's last name.\",\"test\":null},\"age\":{\"type\":\"integer\",\"description\":\"Age in years\",\"minimum\":0}}},{\"$id\":\"https://example.com/person.schema.json\",\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"title\":\"Person\",\"type\":\"object\",\"properties\":{\"firstName\":{\"type\":\"string\",\"description\":\"The person's first name.\"},\"lastName\":{\"type\":\"string\",\"description\":\"The person's last name.\",\"test\":null},\"age\":{\"type\":\"integer\",\"description\":\"Age in years\",\"minimum\":0}}}],\"schema\":{\"$id\":\"https://example.com/person.schema.json\",\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"title\":\"Person\",\"type\":\"object\",\"properties\":{\"firstName\":{\"type\":\"string\",\"description\":\"The person's first name.\"},\"lastName\":{\"type\":\"string\",\"description\":\"The person's last name.\",\"test\":null},\"age\":{\"type\":\"integer\",\"description\":\"Age in years\",\"minimum\":0}}}}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "KEYSANDVALUES",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": false,
+              "statusCode": "200",
+              "headers": {},
+              "body": "{\"passed\":true}"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Send Schema in Model",
+            "x-testDescription": "Send Schema in Model"
+          }
+        ]
+      }
+    },
+    "/body/sendSchema": {
+      "post": {
+        "tags": [
+          "JsonObj"
+        ],
+        "summary": "SendSchemaasBody",
+        "description": "Send Schema as Body",
+        "operationId": "SendSchemaasBody",
+        "parameters": [],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ServerResponse"
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/body/sendSchema",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "body": "{\"$id\":\"https://example.com/person.schema.json\",\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"title\":\"Person\",\"type\":\"object\",\"properties\":{\"firstName\":{\"type\":\"string\",\"description\":\"The person's first name.\"},\"lastName\":{\"type\":\"string\",\"description\":\"The person's last name.\",\"test\":null},\"age\":{\"type\":\"integer\",\"description\":\"Age in years\",\"minimum\":0}}}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "KEYSANDVALUES",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": false,
+              "statusCode": "200",
+              "headers": {},
+              "body": "{\"passed\":true,\"message\":\"OK\",\"nullableNumberMap\":{\"luckydraw1\":null,\"luckydraw2\":88.1,\"luckydraw3\":89.1,\"luckydraw4\":null,\"luckydraw5\":91.1},\"nullableNumberArray\":[null, 88.1, 89.1, null, 91.1]}"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Send Schema as Body",
+            "x-testDescription": "Send Schema as Body"
+          }
+        ]
+      }
+    },
+    "/form/sendSchema": {
+      "post": {
+        "tags": [
+          "JsonObj"
+        ],
+        "summary": "SendSchemaasForm",
+        "description": "Send Schema as Form",
+        "operationId": "SendSchemaasForm",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "$ref": "#/components/schemas/Content-Type"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "encoding": {},
+              "schema": {
+                "required": [
+                  "id",
+                  "model"
+                ],
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "model": {
+                    "type": "object"
+                  },
+                  "modelArray": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    },
+                    "description": ""
+                  },
+                  "modelMap": {
+                    "type": "object",
+                    "additionalProperties": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "required": false
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ServerResponse"
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [],
+        "x-operation-settings": {
+          "CollectParameters": true,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/form/sendSchema",
+              "headers": {
+                "Content-Type": "application/x-www-form-urlencoded"
+              },
+              "body": "model=%7B%22%24id%22%3A%22https%3A%2F%2Fexample.com%2Fperson.schema.json%22%2C%22%24schema%22%3A%22https%3A%2F%2Fjson-schema.org%2Fdraft%2F2020-12%2Fschema%22%2C%22title%22%3A%22Person%22%2C%22type%22%3A%22object%22%2C%22properties%22%3A%7B%22firstName%22%3A%7B%22type%22%3A%22string%22%2C%22description%22%3A%22The%20person%27s%20first%20name.%22%7D%2C%22lastName%22%3A%7B%22type%22%3A%22string%22%2C%22description%22%3A%22The%20person%27s%20last%20name.%22%2C%22test%22%3Anull%7D%2C%22age%22%3A%7B%22type%22%3A%22integer%22%2C%22description%22%3A%22Age%20in%20years%22%2C%22minimum%22%3A0%7D%7D%7D&modelArray=%5B%7B%22%24id%22%3A%22https%3A%2F%2Fexample.com%2Fperson.schema.json%22%2C%22%24schema%22%3A%22https%3A%2F%2Fjson-schema.org%2Fdraft%2F2020-12%2Fschema%22%2C%22title%22%3A%22Person%22%2C%22type%22%3A%22object%22%2C%22properties%22%3A%7B%22firstName%22%3A%7B%22type%22%3A%22string%22%2C%22description%22%3A%22The%20person%27s%20first%20name.%22%7D%2C%22lastName%22%3A%7B%22type%22%3A%22string%22%2C%22description%22%3A%22The%20person%27s%20last%20name.%22%2C%22test%22%3Anull%7D%2C%22age%22%3A%7B%22type%22%3A%22integer%22%2C%22description%22%3A%22Age%20in%20years%22%2C%22minimum%22%3A0%7D%7D%7D%2C%7B%22%24id%22%3A%22https%3A%2F%2Fexample.com%2Fperson.schema.json%22%2C%22%24schema%22%3A%22https%3A%2F%2Fjson-schema.org%2Fdraft%2F2020-12%2Fschema%22%2C%22title%22%3A%22Person%22%2C%22type%22%3A%22object%22%2C%22properties%22%3A%7B%22firstName%22%3A%7B%22type%22%3A%22string%22%2C%22description%22%3A%22The%20person%27s%20first%20name.%22%7D%2C%22lastName%22%3A%7B%22type%22%3A%22string%22%2C%22description%22%3A%22The%20person%27s%20last%20name.%22%2C%22test%22%3Anull%7D%2C%22age%22%3A%7B%22type%22%3A%22integer%22%2C%22description%22%3A%22Age%20in%20years%22%2C%22minimum%22%3A0%7D%7D%7D%5D&modelMap=%7B%22key1%22%3A%7B%22%24id%22%3A%22https%3A%2F%2Fexample.com%2Fperson.schema.json%22%2C%22%24schema%22%3A%22https%3A%2F%2Fjson-schema.org%2Fdraft%2F2020-12%2Fschema%22%2C%22title%22%3A%22Person%22%2C%22type%22%3A%22object%22%2C%22properties%22%3A%7B%22firstName%22%3A%7B%22type%22%3A%22string%22%2C%22description%22%3A%22The%20person%27s%20first%20name.%22%7D%2C%22lastName%22%3A%7B%22type%22%3A%22string%22%2C%22description%22%3A%22The%20person%27s%20last%20name.%22%2C%22test%22%3Anull%7D%2C%22age%22%3A%7B%22type%22%3A%22integer%22%2C%22description%22%3A%22Age%20in%20years%22%2C%22minimum%22%3A0%7D%7D%7D%2C%22key2%22%3A%7B%22%24id%22%3A%22https%3A%2F%2Fexample.com%2Fperson.schema.json%22%2C%22%24schema%22%3A%22https%3A%2F%2Fjson-schema.org%2Fdraft%2F2020-12%2Fschema%22%2C%22title%22%3A%22Person%22%2C%22type%22%3A%22object%22%2C%22properties%22%3A%7B%22firstName%22%3A%7B%22type%22%3A%22string%22%2C%22description%22%3A%22The%20person%27s%20first%20name.%22%7D%2C%22lastName%22%3A%7B%22type%22%3A%22string%22%2C%22description%22%3A%22The%20person%27s%20last%20name.%22%2C%22test%22%3Anull%7D%2C%22age%22%3A%7B%22type%22%3A%22integer%22%2C%22description%22%3A%22Age%20in%20years%22%2C%22minimum%22%3A0%7D%7D%7D%7D&id=54"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "KEYSANDVALUES",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": false,
+              "statusCode": "200",
+              "headers": {},
+              "body": "{\"passed\":true}"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Send Schema as Form",
+            "x-testDescription": "Send Schema as Form"
+          }
+        ]
+      }
+    },
+    "/query/sendSchema": {
+      "post": {
+        "tags": [
+          "JsonObj"
+        ],
+        "summary": "SendSchemaasQuery",
+        "description": "Send Schema as Query",
+        "operationId": "SendSchemaasQuery",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "model",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "object"
+            }
+          },
+          {
+            "name": "modelArray",
+            "in": "query",
+            "description": "",
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          },
+          {
+            "name": "modelMap",
+            "in": "query",
+            "description": "",
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ServerResponse"
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [],
+        "x-operation-settings": {
+          "CollectParameters": true,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/query/sendSchema?model=%7B%22%24id%22%3A%22https%3A%2F%2Fexample.com%2Fperson.schema.json%22%2C%22%24schema%22%3A%22https%3A%2F%2Fjson-schema.org%2Fdraft%2F2020-12%2Fschema%22%2C%22title%22%3A%22Person%22%2C%22type%22%3A%22object%22%2C%22properties%22%3A%7B%22firstName%22%3A%7B%22type%22%3A%22string%22%2C%22description%22%3A%22The%20person%27s%20first%20name.%22%7D%2C%22lastName%22%3A%7B%22type%22%3A%22string%22%2C%22description%22%3A%22The%20person%27s%20last%20name.%22%2C%22test%22%3Anull%7D%2C%22age%22%3A%7B%22type%22%3A%22integer%22%2C%22description%22%3A%22Age%20in%20years%22%2C%22minimum%22%3A0%7D%7D%7D&modelArray=%5B%7B%22%24id%22%3A%22https%3A%2F%2Fexample.com%2Fperson.schema.json%22%2C%22%24schema%22%3A%22https%3A%2F%2Fjson-schema.org%2Fdraft%2F2020-12%2Fschema%22%2C%22title%22%3A%22Person%22%2C%22type%22%3A%22object%22%2C%22properties%22%3A%7B%22firstName%22%3A%7B%22type%22%3A%22string%22%2C%22description%22%3A%22The%20person%27s%20first%20name.%22%7D%2C%22lastName%22%3A%7B%22type%22%3A%22string%22%2C%22description%22%3A%22The%20person%27s%20last%20name.%22%2C%22test%22%3Anull%7D%2C%22age%22%3A%7B%22type%22%3A%22integer%22%2C%22description%22%3A%22Age%20in%20years%22%2C%22minimum%22%3A0%7D%7D%7D%2C%7B%22%24id%22%3A%22https%3A%2F%2Fexample.com%2Fperson.schema.json%22%2C%22%24schema%22%3A%22https%3A%2F%2Fjson-schema.org%2Fdraft%2F2020-12%2Fschema%22%2C%22title%22%3A%22Person%22%2C%22type%22%3A%22object%22%2C%22properties%22%3A%7B%22firstName%22%3A%7B%22type%22%3A%22string%22%2C%22description%22%3A%22The%20person%27s%20first%20name.%22%7D%2C%22lastName%22%3A%7B%22type%22%3A%22string%22%2C%22description%22%3A%22The%20person%27s%20last%20name.%22%2C%22test%22%3Anull%7D%2C%22age%22%3A%7B%22type%22%3A%22integer%22%2C%22description%22%3A%22Age%20in%20years%22%2C%22minimum%22%3A0%7D%7D%7D%5D&modelMap=%7B%22key1%22%3A%7B%22%24id%22%3A%22https%3A%2F%2Fexample.com%2Fperson.schema.json%22%2C%22%24schema%22%3A%22https%3A%2F%2Fjson-schema.org%2Fdraft%2F2020-12%2Fschema%22%2C%22title%22%3A%22Person%22%2C%22type%22%3A%22object%22%2C%22properties%22%3A%7B%22firstName%22%3A%7B%22type%22%3A%22string%22%2C%22description%22%3A%22The%20person%27s%20first%20name.%22%7D%2C%22lastName%22%3A%7B%22type%22%3A%22string%22%2C%22description%22%3A%22The%20person%27s%20last%20name.%22%2C%22test%22%3Anull%7D%2C%22age%22%3A%7B%22type%22%3A%22integer%22%2C%22description%22%3A%22Age%20in%20years%22%2C%22minimum%22%3A0%7D%7D%7D%2C%22key2%22%3A%7B%22%24id%22%3A%22https%3A%2F%2Fexample.com%2Fperson.schema.json%22%2C%22%24schema%22%3A%22https%3A%2F%2Fjson-schema.org%2Fdraft%2F2020-12%2Fschema%22%2C%22title%22%3A%22Person%22%2C%22type%22%3A%22object%22%2C%22properties%22%3A%7B%22firstName%22%3A%7B%22type%22%3A%22string%22%2C%22description%22%3A%22The%20person%27s%20first%20name.%22%7D%2C%22lastName%22%3A%7B%22type%22%3A%22string%22%2C%22description%22%3A%22The%20person%27s%20last%20name.%22%2C%22test%22%3Anull%7D%2C%22age%22%3A%7B%22type%22%3A%22integer%22%2C%22description%22%3A%22Age%20in%20years%22%2C%22minimum%22%3A0%7D%7D%7D%7D&id=54"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "KEYSANDVALUES",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": false,
+              "statusCode": "200",
+              "headers": {},
+              "body": "{\"passed\":true}"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Send Schema as Query",
+            "x-testDescription": "Send Schema as Query"
+          }
+        ]
+      }
+    },
+    "/response/getSchema": {
+      "get": {
+        "tags": [
+          "JsonObj"
+        ],
+        "summary": "GetSchema",
+        "description": "Get Schema",
+        "operationId": "GetSchema",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/response/getSchema"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "KEYSANDVALUES",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": false,
+              "statusCode": "200",
+              "headers": {},
+              "body": "{\"$id\":\"https://example.com/person.schema.json\",\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"title\":\"Person\",\"type\":\"object\",\"properties\":{\"firstName\":{\"type\":\"string\",\"description\":\"The person's first name.\"},\"lastName\":{\"type\":\"string\",\"description\":\"The person's last name.\",\"test\":null},\"age\":{\"type\":\"integer\",\"description\":\"Age in years\",\"minimum\":0}}}"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get Schema",
+            "x-testDescription": "Get Schema"
+          }
+        ]
+      }
+    },
+    "/response/getSchemaArray": {
+      "get": {
+        "tags": [
+          "JsonObj"
+        ],
+        "summary": "GetSchemaArray",
+        "description": "Get Schema Array",
+        "operationId": "GetSchemaArray",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                  },
+                  "description": ""
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/response/getSchemaArray"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "KEYSANDVALUES",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": false,
+              "statusCode": "200",
+              "headers": {},
+              "body": "[{\"$id\":\"https://example.com/person.schema.json\",\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"title\":\"Person\",\"type\":\"object\",\"properties\":{\"firstName\":{\"type\":\"string\",\"description\":\"The person's first name.\"},\"lastName\":{\"type\":\"string\",\"description\":\"The person's last name.\",\"test\":null},\"age\":{\"type\":\"integer\",\"description\":\"Age in years\",\"minimum\":0}}},{\"$id\":\"https://example.com/person.schema.json\",\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"title\":\"Person\",\"type\":\"object\",\"properties\":{\"firstName\":{\"type\":\"string\",\"description\":\"The person's first name.\"},\"lastName\":{\"type\":\"string\",\"description\":\"The person's last name.\",\"test\":null},\"age\":{\"type\":\"integer\",\"description\":\"Age in years\",\"minimum\":0}}}]"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get Schema Array",
+            "x-testDescription": "Get Schema Array"
+          }
+        ]
+      }
+    },
+    "/response/getSchemaMap": {
+      "get": {
+        "tags": [
+          "JsonObj"
+        ],
+        "summary": "GetSchemaMap",
+        "description": "Get Schema Map",
+        "operationId": "GetSchemaMap",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "object"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/response/getSchemaMap"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "KEYSANDVALUES",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": false,
+              "statusCode": "200",
+              "headers": {},
+              "body": "{\"key1\":{\"$id\":\"https://example.com/person.schema.json\",\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"title\":\"Person\",\"type\":\"object\",\"properties\":{\"firstName\":{\"type\":\"string\",\"description\":\"The person's first name.\"},\"lastName\":{\"type\":\"string\",\"description\":\"The person's last name.\",\"test\":null},\"age\":{\"type\":\"integer\",\"description\":\"Age in years\",\"minimum\":0}}},\"key2\":{\"$id\":\"https://example.com/person.schema.json\",\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"title\":\"Person\",\"type\":\"object\",\"properties\":{\"firstName\":{\"type\":\"string\",\"description\":\"The person's first name.\"},\"lastName\":{\"type\":\"string\",\"description\":\"The person's last name.\",\"test\":null},\"age\":{\"type\":\"integer\",\"description\":\"Age in years\",\"minimum\":0}}}}"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get Schema Map",
+            "x-testDescription": "Get Schema Map"
+          }
+        ]
+      }
+    },
+    "/response/getSchemaInModel": {
+      "get": {
+        "tags": [
+          "JsonObj"
+        ],
+        "summary": "GetSchemainModel",
+        "description": "Get Schema in Model",
+        "operationId": "GetSchemainModel",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SchemaContainer-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-SchemaContainer-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test"
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/response/getSchemaInModel"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "KEYSANDVALUES",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": false,
+              "statusCode": "200",
+              "headers": {},
+              "body": "{\"name\":\"a name\",\"id\":\"definition-123\",\"schemaMap\":{\"key1\":{\"$id\":\"https://example.com/person.schema.json\",\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"title\":\"Person\",\"type\":\"object\",\"properties\":{\"firstName\":{\"type\":\"string\",\"description\":\"The person's first name.\"},\"lastName\":{\"type\":\"string\",\"description\":\"The person's last name.\",\"test\":null},\"age\":{\"type\":\"integer\",\"description\":\"Age in years\",\"minimum\":0}}},\"key2\":{\"$id\":\"https://example.com/person.schema.json\",\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"title\":\"Person\",\"type\":\"object\",\"properties\":{\"firstName\":{\"type\":\"string\",\"description\":\"The person's first name.\"},\"lastName\":{\"type\":\"string\",\"description\":\"The person's last name.\",\"test\":null},\"age\":{\"type\":\"integer\",\"description\":\"Age in years\",\"minimum\":0}}}},\"schemaArray\":[{\"$id\":\"https://example.com/person.schema.json\",\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"title\":\"Person\",\"type\":\"object\",\"properties\":{\"firstName\":{\"type\":\"string\",\"description\":\"The person's first name.\"},\"lastName\":{\"type\":\"string\",\"description\":\"The person's last name.\",\"test\":null},\"age\":{\"type\":\"integer\",\"description\":\"Age in years\",\"minimum\":0}}},{\"$id\":\"https://example.com/person.schema.json\",\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"title\":\"Person\",\"type\":\"object\",\"properties\":{\"firstName\":{\"type\":\"string\",\"description\":\"The person's first name.\"},\"lastName\":{\"type\":\"string\",\"description\":\"The person's last name.\",\"test\":null},\"age\":{\"type\":\"integer\",\"description\":\"Age in years\",\"minimum\":0}}}],\"schema\":{\"$id\":\"https://example.com/person.schema.json\",\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"title\":\"Person\",\"type\":\"object\",\"properties\":{\"firstName\":{\"type\":\"string\",\"description\":\"The person's first name.\"},\"lastName\":{\"type\":\"string\",\"description\":\"The person's last name.\",\"test\":null},\"age\":{\"type\":\"integer\",\"description\":\"Age in years\",\"minimum\":0}}}}"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get Schema in Model",
+            "x-testDescription": "Get Schema in Model"
+          }
+        ]
+      }
+    },
+    "/body/sendValueInModel": {
+      "post": {
+        "tags": [
+          "JsonVal"
+        ],
+        "summary": "SendValueinModel",
+        "description": "Send Value in Model",
+        "operationId": "SendValueinModel",
+        "parameters": [],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ValueContainer"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ServerResponse"
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/body/sendValueInModel",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "body": "{\"name\":\"a name\",\"id\":\"definition-123\",\"valueMap\":{\"key1\":\"some string\",\"key2\":true,\"key3\":123},\"valueArray\":[\"some string\",true,123],\"value\":\"some string value in model\"}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "KEYSANDVALUES",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": false,
+              "statusCode": "200",
+              "headers": {},
+              "body": "{\"passed\":true}"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Send Value in Model",
+            "x-testDescription": "Send Value in Model"
+          }
+        ]
+      }
+    },
+    "/body/sendValue": {
+      "post": {
+        "tags": [
+          "JsonVal"
+        ],
+        "summary": "SendValueasBody",
+        "description": "Send Value as Body",
+        "operationId": "SendValueasBody",
+        "parameters": [],
+        "requestBody": {
+          "description": "",
+          "content": {
+            "text/plain": {
+              "schema": {}
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ServerResponse"
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/body/sendValue",
+              "headers": {
+                "Content-Type": "text/plain"
+              },
+              "body": "false"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "KEYSANDVALUES",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": false,
+              "statusCode": "200",
+              "headers": {},
+              "body": "{\"passed\":true}"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Send Value as Body",
+            "x-testDescription": "Send Value as Body"
+          }
+        ]
+      }
+    },
+    "/form/sendValue": {
+      "post": {
+        "tags": [
+          "JsonVal"
+        ],
+        "summary": "SendValueasForm",
+        "description": "Send Value as Form",
+        "operationId": "SendValueasForm",
+        "parameters": [
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "description": "",
+            "required": true,
+            "style": "simple",
+            "schema": {
+              "$ref": "#/components/schemas/Content-Type"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/x-www-form-urlencoded": {
+              "encoding": {},
+              "schema": {
+                "required": [
+                  "id",
+                  "model"
+                ],
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "model": {},
+                  "modelArray": {
+                    "type": "array",
+                    "items": {},
+                    "description": ""
+                  },
+                  "modelMap": {
+                    "type": "object",
+                    "additionalProperties": {}
+                  }
+                }
+              }
+            }
+          },
+          "required": false
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ServerResponse"
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [],
+        "x-operation-settings": {
+          "CollectParameters": true,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/form/sendValue",
+              "headers": {
+                "Content-Type": "application/x-www-form-urlencoded"
+              },
+              "body": "id=54&model=true&modelArray=%5Btrue%2C%22some%20string%22%2C123%5D&modelMap=%7B%22key1%22%3Atrue%2C%22key2%22%3A%22some%20string%22%2C%22key3%22%3A123%7D"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "KEYSANDVALUES",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": false,
+              "statusCode": "200",
+              "headers": {},
+              "body": "{\"passed\":true}"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Send Value as Form",
+            "x-testDescription": "Send Value as Form"
+          }
+        ]
+      }
+    },
+    "/query/sendValue": {
+      "post": {
+        "tags": [
+          "JsonVal"
+        ],
+        "summary": "SendValueasQuery",
+        "description": "Send Value as Query",
+        "operationId": "SendValueasQuery",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "model",
+            "in": "query",
+            "description": "",
+            "required": true,
+            "style": "form",
+            "explode": true,
+            "schema": {}
+          },
+          {
+            "name": "modelArray",
+            "in": "query",
+            "description": "",
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          {
+            "name": "modelMap",
+            "in": "query",
+            "description": "",
+            "style": "form",
+            "explode": true,
+            "schema": {
+              "type": "object",
+              "additionalProperties": {}
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ServerResponse"
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [],
+        "x-operation-settings": {
+          "CollectParameters": true,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/query/sendValue?model=true&modelArray=%5Btrue%2C%22some%20string%22%2C123%5D&modelMap=%7B%22key1%22%3Atrue%2C%22key2%22%3A%22some%20string%22%2C%22key3%22%3A123%7D&id=54"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "KEYSANDVALUES",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": false,
+              "statusCode": "200",
+              "headers": {},
+              "body": "{\"passed\":true}"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Send Value as Query",
+            "x-testDescription": "Send Value as Query"
+          }
+        ]
+      }
+    },
+    "/response/getValue": {
+      "get": {
+        "tags": [
+          "JsonVal"
+        ],
+        "summary": "GetValue",
+        "description": "Get Value",
+        "operationId": "GetValue",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "text/plain": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/response/getValue"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "RAW",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": false,
+              "statusCode": "200",
+              "headers": {},
+              "body": "978"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get Value",
+            "x-testDescription": "Get Value"
+          }
+        ]
+      }
+    },
+    "/response/getValueArray": {
+      "get": {
+        "tags": [
+          "JsonVal"
+        ],
+        "summary": "GetValueArray",
+        "description": "Get Value Array",
+        "operationId": "GetValueArray",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {},
+                  "description": ""
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/response/getValueArray"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "RAW",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": false,
+              "statusCode": "200",
+              "headers": {},
+              "body": "[978,\"some string\",false]"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get Value Array",
+            "x-testDescription": "Get Value Array"
+          }
+        ]
+      }
+    },
+    "/response/getValueMap": {
+      "get": {
+        "tags": [
+          "JsonVal"
+        ],
+        "summary": "GetValueMap",
+        "description": "Get Value Map",
+        "operationId": "GetValueMap",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {}
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/response/getValueMap"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "KEYSANDVALUES",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": false,
+              "statusCode": "200",
+              "headers": {},
+              "body": "{\"key1\":978,\"key2\":\"some string\",\"key3\":false}"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get Value Map",
+            "x-testDescription": "Get Value Map"
+          }
+        ]
+      }
+    },
+    "/response/getValueInModel": {
+      "get": {
+        "tags": [
+          "JsonVal"
+        ],
+        "summary": "GetValueinModel",
+        "description": "Get Value in Model",
+        "operationId": "GetValueinModel",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {},
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ValueContainer"
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false,
+        "security": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        },
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/response/getValueInModel"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "KEYSANDVALUES",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": false,
+              "statusCode": "200",
+              "headers": {},
+              "body": "{\"name\":\"a name\",\"id\":\"definition-123\",\"valueMap\":{\"key1\":\"some string\",\"key2\":true,\"key3\":123},\"valueArray\":[\"some string\",true,123],\"value\":\"some string value in model\"}"
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get Value in Model",
+            "x-testDescription": "Get Value in Model"
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "SchemaContainer-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-SchemaContainer-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test": {
+        "title": "SchemaContainer-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-SchemaContainer-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test-Test",
+        "required": [
+          "name",
+          "id",
+          "schema"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "a name"
+          },
+          "id": {
+            "type": "string",
+            "example": "definition-123"
+          },
+          "schema": {
+            "type": "object"
+          },
+          "schemaArray": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            },
+            "description": ""
+          },
+          "schemaMap": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "ValueContainer": {
+        "title": "ValueContainer",
+        "required": [
+          "name",
+          "id",
+          "value"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "a name"
+          },
+          "id": {
+            "type": "string",
+            "example": "definition-123"
+          },
+          "value": {},
+          "valueArray": {
+            "type": "array",
+            "items": {},
+            "description": ""
+          },
+          "valueMap": {
+            "type": "object",
+            "additionalProperties": {}
+          }
+        }
+      },
+      "ServerResponse": {
+        "title": "ServerResponse",
+        "required": [
+          "passed"
+        ],
+        "type": "object",
+        "properties": {
+          "passed": {
+            "type": "boolean"
+          },
+          "Message": {
+            "type": "string"
+          },
+          "input": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object"
+            }
+          },
+          "nullableNumberMap": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "number",
+              "nullable": true
+            }
+          },
+          "nullableNumberArray": {
+            "type": "array",
+            "items": {
+              "type": "number",
+              "nullable": true
+            }
+          }
+        }
+      },
+      "Content-Type": {
+        "title": "Content-Type",
+        "enum": [
+          "application/x-www-form-urlencoded"
+        ],
+        "type": "string",
+        "example": "application/x-www-form-urlencoded",
+        "x-enum-elements": [
+          {
+            "name": "Enum_applicationxwwwformurlencoded",
+            "description": ""
+          }
+        ]
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "JsonObj",
+      "description": ""
+    },
+    {
+      "name": "JsonVal",
+      "description": ""
+    }
+  ]
+}

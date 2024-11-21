@@ -1,6 +1,6 @@
 {
     "OpenAPIDefinitionPaths": [
-        "Autosc@nAPI-OpenApi3Json.json", "test","test/folder/New folder"
+        "SpecialJsonValue.json", "test","test/folder/New folder"
     ],
     "IgnoreValidationErrors": false
 }
