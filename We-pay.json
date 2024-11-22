@@ -7,7 +7,7 @@
 		"contact": {
 			"name": "WePay API Support",
 			"email": "api@wepay.com",
-			"url": "https://dev.wepay.com/support"
+			"url": ""
 		},
 		"description": "Use WePay's APIs to integrate with [Link](/link), [Clear](/clear), or [Core](/core), and to leverage feature offerings like [Digital Wallets](/digital-wallets) and [Card Present](/card-present)."
 	},
@@ -53,7 +53,7 @@
 									"id": "d3f61e56-5d99-4895-af2d-a07ab48476e9",
 									"incoming_payments": {
 										"accepted_methods": [
-											"payment_bvvank",
+											"payment_bank",
 											"mastercard",
 											"visa",
 											"amex"
