@@ -53,7 +53,7 @@
 									"id": "d3f61e56-5d99-4895-af2d-a07ab48476e9",
 									"incoming_payments": {
 										"accepted_methods": [
-											"payment_bank",
+											"payment_bvvank",
 											"mastercard",
 											"visa",
 											"amex"
