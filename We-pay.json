@@ -1,7 +1,7 @@
 {
 	"openapi": "3.0.0",
 	"info": {
-		"title": "We-pay",
+		"title": "",
 		"version": "v3.2",
 		"termsOfService": "https://dev.wepay.com/platform-tos",
 		"contact": {
