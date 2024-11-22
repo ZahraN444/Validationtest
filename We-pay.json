@@ -1,7 +1,7 @@
 {
 	"openapi": "3.0.0",
 	"info": {
-		"title": "We-paytest",
+		"title": "We-paytesting",
 		"version": "v3.2",
 		"termsOfService": "https://dev.wepay.com/platform-tos",
 		"contact": {
