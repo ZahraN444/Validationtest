@@ -2,5 +2,5 @@
     "OpenAPIDefinitionPaths": [
         "We-pay.json"
     ],
-    "IgnoreValidationErrors": true
+    "IgnoreValidationErrors": false
 }
