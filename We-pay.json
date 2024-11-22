@@ -1,7 +1,7 @@
 {
 	"openapi": "3.0.0",
 	"info": {
-		"title": "",
+		"title": "We-pay",
 		"version": "v3.2",
 		"termsOfService": "https://dev.wepay.com/platform-tos",
 		"contact": {
@@ -9,7 +9,7 @@
 			"email": "api@wepay.com",
 			"url": ""
 		},
-		"description": "Use WePay's APIs to integrate with [Link](/link), [Clear](/clear), or [Core](/core), and to leverage feature offerings like [Digital Wallets](/digital-wallets) and [Card Present](/card-present)."
+		"description": "Use WePay's APIs to integratdde with [Link](/link), [Clear](/clear), or [Core](/core), and to leverage feature offerings like [Digital Wallets](/digital-wallets) and [Card Present](/card-present)."
 	},
 	"servers": [
 		{
