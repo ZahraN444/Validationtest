@@ -1,6 +1,6 @@
 {
     "OpenAPIDefinitionPaths": [
-        "We-pay.json"
+        "spotify-open-api.json"
     ],
     "IgnoreValidationErrors": false
 }
