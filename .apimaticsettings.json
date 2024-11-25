@@ -1,6 +1,6 @@
 {
     "OpenAPIDefinitionPaths": [
-        "Autosc@nAPI-OpenApi3Json.json"
+        "spotify-open-api.yml"
     ],
-    "IgnoreValidationErrors": true
+    "IgnoreValidationErrors": false
 }
