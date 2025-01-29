@@ -22,7 +22,7 @@
           "Alarm"
         ],
         "summary": "ApiAlarmGetDayAlarm_GET",
-        "description": "",
+        "description": "vv",
         "operationId": "ApiAlarmGetDayAlarm_GET",
         "parameters": [
           {
