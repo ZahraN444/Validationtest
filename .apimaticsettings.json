@@ -1,6 +1,0 @@
-{
-    "OpenAPIDefinitionPaths": [
-        "Autosc@nAPI-OpenApi3Json.json"
-    ],
-    "IgnoreValidationErrors": true
-}
